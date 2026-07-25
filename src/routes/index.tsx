@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Activity, Brain, HeartPulse, LineChart, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
+import { Activity, Brain, HeartPulse, LineChart, Sparkles, ArrowRight } from "lucide-react";
 import { Disclaimer } from "@/components/nura/Disclaimer";
 
 export const Route = createFileRoute("/")({
@@ -29,11 +29,7 @@ function Landing() {
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background/70 to-transparent" aria-hidden />
         <div className="relative mx-auto max-w-6xl px-4 py-24 md:py-36">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/62 px-4 py-2 text-xs font-semibold text-muted-foreground shadow-card backdrop-blur-xl">
-              <ShieldCheck className="h-3.5 w-3.5 text-brand" />
-              Personalized prevention, not diagnosis
-            </span>
-            <h1 className="text-editorial mx-auto mt-7 max-w-4xl text-balance text-5xl text-foreground md:text-7xl">
+            <h1 className="text-editorial mx-auto max-w-4xl text-balance text-5xl text-foreground md:text-7xl">
               Wellness intelligence
               <span className="hero-accent mt-0 block text-[3.65rem] md:text-[5.35rem]">for proactive health.</span>
             </h1>
