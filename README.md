@@ -42,6 +42,33 @@ Nura is **not a diagnostic tool** and does not replace professional medical advi
 
 ---
 
+## 🖥️ Run Locally
+
+Install dependencies in the project root and backend:
+
+```bash
+npm install
+cd server
+npm install
+cp .env.example .env
+```
+
+Start the backend from `server/`:
+
+```bash
+npm run dev
+```
+
+In another terminal, start the frontend from the project root:
+
+```bash
+npm run dev -- --host 127.0.0.1
+```
+
+Open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). The backend runs at `http://127.0.0.1:4000`. An `OPENAI_API_KEY` in `server/.env` is optional; without it, insight summaries use the built-in fallback.
+
+---
+
 ## 🔮 Planned Improvements
 
 - 🔐 Add authentication and user-owned profiles
